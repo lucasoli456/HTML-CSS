@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="LucasDias-favicon-32x32.png" type="image/x-icon">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+        body {
+            font-family:   'Work Sans', Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in(polegada), px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+
+            16px geralmete é = 1em
+
+            É recomendado pela W3C o uso de PX e EM. Nós usaremos EM
+            */
+            /* (Weight- Peso) (Width- Largura) (Height- Altura) */
+            /* Lighter normal bold bolder */
+        }
+        h1{
+            /* shorthand font (Propriedade)
+            font-style -> font-weight -> font-size -> font-family 
+            
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic
+            */
+            font: italic bolder 3em 'schoolbell', sans-sefir; color: rgba(23, 0, 233, 0.392)
+            }
+            h2{
+                font: bold 2em 'work Sans';
+            }
+            p{
+                font: italic lighter 0.9em 'arial'
+            }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, voluptatibus deserunt facilis, quaerat voluptatum non deleniti iusto totam maiores nihil optio repudiandae corporis delectus neque libero quam ullam ad doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia placeat porro perferendis minus voluptate, optio earum saepe odit? Laboriosam numquam laudantium at ad tempora minus ducimus ab illum eligendi dicta! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium molestias nemo consequuntur ipsam dolore aliquid temporibus voluptatibus? Deserunt, accusantium ex porro mollitia sint nihil et, nobis praesentium voluptas explicabo ratione?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum laborum dolor repudiandae hic numquam nihil, saepe, dignissimos doloremque minima explicabo, deleniti sapiente! Illum qui consequatur atque debitis explicabo veniam et!</p>
+
+    <h2>Subtítulo de exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et ex quam itaque neque molestias odio quod, commodi earum quia optio assumenda voluptas dolorum explicabo, eveniet cupiditate eos, animi velit.</p>
+</body>
+</html>

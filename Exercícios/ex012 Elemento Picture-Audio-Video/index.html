@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="LucasDias-favicon-32x32.png" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture><!-- Caso o navegador tenha menos de 1050px ele abre a foto M Caso seja menos de 750px ele abre a foto P-->
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <!-- Formatos de áudio(MP3/WAV/OGG) É interessante adicionar mais de um formato de áudio ao seu site pois nem sempre o navegador será compatível ao formato que está sendo adicionado.--> <!-- Preload= AUTO (Só considera que o site foi totalmnte carregado quando carregar até mesmo o áudio independente de seu tamanho. NÃO É A MELHOR OPÇÃO PARA UM SITE). Preload= METADATA (É a ,elhor opção pois carrega poucos arquivos e não deixa o site lento)-->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+    <audio preload="metadata" controls autoplay > 
+        <source src="midia-audio/jingle-bells.mp3" type="audio/mpeg">
+        <source src="midia-audio/jingle-bells.mp3" type="audio/ogg">
+        <source src="midia-audio/jingle-bells.mp3." type="audio/wav"> <!--Evite usar arquivo (WAV) pois são arquivos muito pesados e deixam os sites lentos. Para arquivos tipo WAV que são qualidade superior utileze a opção de DOWNLOAD-->
+        <p><a href="midia-audio/jingle-bells.mp3.">Infelizmente seu navegador não consegue reproduzir o áudio. Clique aqui para baixar o arquivo</a> </p>
+    </audio> 
+
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor. </p>
+
+    <video src="midia-video/meus-limoes.mp4" width="450" controls></video> <!-- De preferência usar os (SOURCES) Para adicionar vários formatos de video, para que funcione em qualquer navegador. -->
+
+    <video width="450" poster="capa video/limoes-capa.jpg" controls autoplay loop><!-- A ordem tem total influência de preferência começar com o arquivo com maior compatibilidade com navegadores e menor arquivo para não deixar o site lento.-->
+        <source src="midia-video/meus-limoes.mp4" type="video/mp4">
+        <source src="midia-video/meus-limoes.m4v" type="video/mp4">
+        <source src="midia-video/meus-limoes.webm" type="video/webm">
+        <source src="midia-video/meus-limoes.ogv" type="video/ogg">
+        <p>. Seu navegador não tem compatibilidade com reprodução de vídeos. <a href="">Clique aqui para fazer o Download</a></p>
+    </video>
+    
+    <h1>Inserindo vídeos de hospedagem externa</h1>
+    <p>Inserindo vídeos do Youtube.</p>
+
+    <iframe width="450" height="315" src="https://www.youtube.com/embed/68pYm_KgptU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p>Inserindo vídeos do Vimeo</p>
+
+    <iframe src="https://player.vimeo.com/video/197093965?h=7fbc516b5a&color=ff0179&portrait=0" width="450" height="253" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+
+</body>
+</html>

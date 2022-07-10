@@ -5,8 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeira tabela</title>
+    <!--
+        HIERARQUIA DE TABELAS (Simples)
+        Table = Tabela
+            Table Row = Linha de Tabela
+                Table Header = Cabeçalho da Tabela
+                Table Data = Dado de Tabela
+
+                *Se a hierarquia não for seguida os dados irão aparecer antes ou depois da tebala*
+    -->
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+            
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center; /* Alinhamento Horizontal com LEFT/ CENTER/ RIGHT*/
+            vertical-align: middle; /*Alinhamento vertical COM TOP/ MIDDLE/ BOTTOM */
+        }
+        td.dado{
+            background-color: springgreen;
+        }
+        .numero{
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Minha primeira tabela</h1>
+
+    <table> <!-- Tabela -->
+        <tr> <!-- Primeira linha -->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr> <!-- Segunda linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr> <!-- Terceira linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
+        </tr>
+       <tr> <!-- Quarta linha-->
+            <td class="dado">A4</td>
+            <td>B4</td>
+            <td class="numero">C4</td>
+       </tr> 
+       <tr> <!-- Quinta Linha -->
+            <td>A5</td>
+            <td>B5</td>
+            <td class="dado">C5</td>
+       </tr>
+    </table>
 </body>
 </html>

@@ -4,21 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesclagem de Células</title>
-    <!--
-        MESCLAGEM DE CÉLULA
-
-        COLSPAN: FAZ A MESCLAGEM DA COLUNA
-        ROWSPAN FAZ A MESCLAGEM DA LINHA
-
-    -->
+    <title>Desafio mesclagem de célula 02</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
             width: 300px;
-            border-collapse: collapse;
         }
         td{
             border: 1px solid black;
@@ -30,21 +22,27 @@
 <body>
     <table>
         <tr>
-            <td>A</td>
-            <td colspan="2">B</td>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
         </tr>
         <tr>
-            <td rowspan="3">D</td>
+            <td rowspan="4">C</td>
+            <td>D</td>
             <td>E</td>
-            <td rowspan="2">F</td>
-        </tr>        
-        <tr>
-            
-            <td>H</td>
-            
+            <td>F</td>
         </tr>
         <tr>
-            <td colspan="2">M</td>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
         </tr>        
     </table>
 </body>

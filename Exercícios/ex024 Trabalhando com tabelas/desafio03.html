@@ -5,8 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio de tabela 03</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }table{
+            width: 600px;
+        }td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <table>
+        <thead>
+            <th rowspan="2">Área</th>            
+            <th>Disciplinas</th>
+            <th colspan="2">Notas</th>
+            <th rowspan="2">Média</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4">Média de exatas</th>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>  
+            <tr>
+                <th colspan="4">Média de Humanas</th>
+                <td>0.0</td>
+            </tr>          
+        </tbody>
+    </table>
 </body>
 </html>

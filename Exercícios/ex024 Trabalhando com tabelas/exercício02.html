@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando com Colgrup</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+           width: 500px;
+           border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        col.cnome{
+            background-color: yellowgreen;
+        }
+        col.cprof{
+            background-color: tomato;
+        }
+        col.cgroup{
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgroup" span="2">
+            <col class="cprof">
+            
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>Feminino</td>
+            <td>29</td>
+            <td>Programadora</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>Masculino</td>
+            <td>45</td>
+            <td>Arquiteto</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>Masculino</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Fernanda</td>
+            <td>Feminino</td>
+            <td>37</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>Masculino</td>
+            <td>59</td>
+            <td>Engenheiro</td>
+        </tr>
+        <tr>
+            <td>Luciana</td>
+            <td>Feminino</td>
+            <td>25</td>
+            <td>Gerente</td>
+        </tr>
+    </table>
+</body>
+</html>

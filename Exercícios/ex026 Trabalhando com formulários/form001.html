@@ -15,9 +15,9 @@
     <h1>Meu primeiro formulário</h1>
     <form action="cadastro.php" method="post" autocomplete="off"> 
         <p> 
-            <label for="inome"> Nome: </label> 
+            <label for="inome"> Nome: </label> <! Todo label utiliza em seu for o id do formulario -->
             <input type="text" name="nome" id="inome">
-        </p>
+        </p> 
         <p> 
             <label for="isobrenome"> Sobrenome: </label>
             <input type="text" name="sobrenome" id="isobrenome">
@@ -27,7 +27,10 @@
         </p>
     </form>
     <!--AUTOCOMPLETE OFF = Desliga as sugestões de palavras no formulário action = atributo usado para enviar dados de formulário através de alguma linguagem de programação
-    METHOD = Por padrão os formulários utilizam o método GET (Que mostra os dados digitados no formulário na brra da URL)
+    METHOD = Por padrão os formulários utilizam o método GET (Que mostra os dados digitados no formulário na brra da URL) 
+    
+    *SITUAÇÕES ONDE NÃO SE USA O MÉTODO GET*
+    Só podem ser enviados até 3000 bites o que é aproximadamente 3000 mil letras e outra situação onde não se pode usar o GET é para dadoa sensiveis como senha, cartão de crédito, envio de fotos ou outro tipo de arquivo
 
     POST é o método que NÃO mostra os dados digitatos no formulário na barra de URL porém não significa que não estão visiveis ou criptografados pois é possivel acessá-los através de outros meios. 
 

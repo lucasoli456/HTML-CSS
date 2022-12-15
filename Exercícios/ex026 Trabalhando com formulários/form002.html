@@ -15,7 +15,7 @@
     <h1>Teste de formulário</h1>
     <form action="cadastro.php" method="POST" autocomplete="on">
         <p>
-            <label for="iusu">Usuário</label>
+            <label for="iusu">Usuário:</label>
             <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="Username">
         </p>
         <p>
@@ -27,5 +27,14 @@
             <input type="reset" value="Limpar">
         </p>
     </form>
+    <!--
+        required = Torna obrigatório o preenchimento do formulário.
+        minlength = minimo de letras ou caracteres obrigatórios na caixa do formulário.
+        maxlenght = maximo de letras ou caracteres obrigatórios na caixa do formulário.
+        placeholder = Nome dentro da caixa do formulário com o significado da caixa. 
+        size = tamanho da caixa e capacidade de letras que será mostrada.
+        autocomplete on = Mostra sugestões para caixa do formulário, nesse caso é preciso também adicionar o autocomplete a caixa que você deseja receber sugestões.
+        autocomplete off = Não mostra sugestões para caixa do formulário.
+    -->
 </body>
 </html>

@@ -3,5 +3,6 @@
 /*Configurações aparelho em pé (Portrait)*/
 
 body{
-    background-color: orange;
+    background: url(../imagens/cev-portrait.jpg)
+
 }

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-/*Configurações aparelho deitado (Landscape)*/
+/*Configurações aparelho deitado (landscape)*/
 
 body{
-    background-color: red;
+    background: url(../imagens/cev-landscape.jpg)
 }

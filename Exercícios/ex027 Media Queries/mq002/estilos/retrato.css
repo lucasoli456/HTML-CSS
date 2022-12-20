@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
-/*Configurações aparelho em pé (Portrait)*/
+/*Configurações retrato*/
 
 body{
-    background: url(../imagens/cev-portrait.jpg)
-
+    background: url(../imagens/cev-portrait.jpg);
 }

@@ -7,36 +7,36 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" >
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
-        <h1>Menu Hamburguer</h1>
+        <h1>Barbearia Los Hermanos</h1>
     </header>
 
     <i id="burguer" class="material-icons" onclick="clikMenu()">menu</i>
 
     <menu id="itens">
             <ul>
-                <li><a href="#">Opção</a></li>
-                <li><a href="#">Opção</a></li>
-                <li><a href="#">Opção</a></li>
-                <li><a href="#">Opção</a></li>
-                <li><a href="#">Opção</a></li>
+                <li><a href="#">Quem somos</a></li>
+                <li><a href="#">Tabela de preços</a></li>
+                <li><a href="#">Nossa equipe</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>      
     </menu>
     <main>
         <article>
-            <h2>Origem do Hamburguer</h2>
+            <h2>Barbearia Los Hermanos</h2>
             <p>
-                Existem relatos sobre a história do hambúrguer, que ele foi inventado nos Estados Unidos, por imigrantes alemães, que embarcaram no porto da Hamburgo rumo aos Estados Unidos. Note a semelhança com o nome do hambúrguer… <br> <br>
-                Mas antes de oficializar a invenção do hambúrguer em 1904, também deveríamos levar em conta que antes disso, surgiram seus ingredientes principais que são o pão e a carne moída, ingredientes inventados antes de sua junção. A invenção da carne moída vem do século XVII, quando tribos nômades da Asia Ocidental, conhecidas com Tártaros, desenvolveram a técnica de moer carne bovina dura e de má qualidade, para torná-la mais digerível. Quanto ao pão, este foi inventado a mais de 12 mil anos, segundo os historiadores.<br><br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere debitis illum, voluptatem eligendi fuga dolore. Sunt modi repellat consequuntur adipisci, atque impedit quae quasi assumenda voluptates vitae aliquid, tempore similique? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, sunt molestiae vitae pariatur odit cum dolorem sequi distinctio repellendus deserunt, quasi mollitia beatae in modi vero odio dolorum nisi aperiam.<br> <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet vel optio qui repellat, dicta in facere voluptatum cum temporibus numquam aliquid, maiores sit esse eius porro voluptatem hic iste harum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat omnis laudantium iure distinctio fuga quo repellat quasi, incidunt molestiae ullam quis deserunt at architecto deleniti, cum voluptatem animi ea soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam labore culpa obcaecati, ullam dicta ad, harum illum expedita ratione iusto quasi omnis iure ipsum consectetur, minus error debitis repellat aut.<br><br>
         
-                Neste meio tempo, em algum momento entre o século XVII e o XIX, dentre estes 200 anos, alguém pode ter juntado estes ingredientes, mas não pensou em oficializar a fórmula e a data real de sua descoberta, pode ter ocorrido bem antes de 1904, desta forma, há relatos de um inglês chamado de Jhon Montagu, intitulado como quarto conde na cidade de Sandwich na Inglaterra, apontado como o primeiro inventor do lanche, pois em 1762, ele teria experimentado carne moída, entre duas fatias pão, durante uma de suas partidas de bridge, jogo de cartas popular entre os britânicos, conforme narra o livro Hambúrguer: uma história global, escrito por Andrew F. Smith, professor de história da culinária em Nova York.<br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo deserunt quibusdam animi repellendus velit eum, nulla officia sed, veritatis aliquid assumenda nesciunt. Minima, quod quae? Laudantium ut consectetur animi deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi exercitationem alias debitis quos illo quaerat rerum ratione porro, aliquam repellendus odio est nam, fugiat corporis ducimus eveniet eos! Recusandae, eum.<br><br>
         
-                Conforme relatos de historiadores, os primeiros a apreciarem o hambúrguer nos Estados Unidos, foram os marinheiros, para mastigarem algo enquanto trabalhavam arduamente.</p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae sequi dolorum tempore est quisquam a maxime culpa magni distinctio harum! Asperiores, dolorum fugit! Vero iste blanditiis eveniet ipsum, quo impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta hic iste quo reiciendis nobis aliquid suscipit consequuntur, exercitationem deserunt cupiditate ab maiores consequatur sit. Ut velit assumenda expedita obcaecati iure?</p>
         </article>
     </main>
-
     <footer>Site desenvolvido por <a href="https://www.linkedin.com/in/lucas-dias-1b1546201/" target="_blank">Lucas Dias</a></footer>
     
     <script>
@@ -45,6 +45,14 @@
                 itens.style.display = 'none'
             } else {
                 itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
             }
         }
     </script>

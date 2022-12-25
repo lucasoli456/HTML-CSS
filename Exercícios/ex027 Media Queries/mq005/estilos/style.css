@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); 
 
+/*Configurações baseado em Mobile First*/
+
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
     padding: 0px;
@@ -33,7 +35,7 @@ i#burguer{
     background-color: rgba(0, 0, 0, 0.956);
     color: white;
     display: block;
-    text-align: left;
+    text-align: right;
     padding: 10px;
     cursor: pointer;
 }
@@ -54,7 +56,7 @@ menu > ul > li > a {
     text-decoration: none;
     background-color: rgba(1, 0, 3, 0.512);
     color: #daa520;
-    border: 0.1px solid rgba(0, 0, 0, 0.239);
+    border: 0.1px solid rgba(0, 0, 0, 0.108);
     border-radius: 0px 0px 5px 5px;
 } 
 menu > ul > li > a:hover{
@@ -64,18 +66,11 @@ main{
     width: 80vw;
     background-color: rgba(0, 0, 0, 0.53);
     margin: auto;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
+    padding-bottom: 20px;
     padding: 20px;
-    padding-bottom: 20px;
     border-radius: 10px;
-}
-iframe {
-    width: 300px;
-    display: flex;
-    margin: auto;
-    flex-direction: row-reverse;
-    padding-bottom: 20px;
 }
 h2{
     font-family: 'https://fonts.googleapis.com/css2?family=Lobster&display=swap';
